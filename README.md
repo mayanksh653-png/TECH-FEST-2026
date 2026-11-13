@@ -1,5 +1,4 @@
 # R.I.D.G.E 2026 — RGGEC Kangra
-**Presented by EVOLVIX [CSE (AI&DS)] & NEMESIS SOCIETY**
 
 Official web portal for **R.I.D.G.E 2026** at Rajiv Gandhi Government Engineering College (RGGEC) Kangra on **17 November**. Built with **De Stijl Abstrato Neoplasticism** aesthetics and modern responsive engineering.
 
