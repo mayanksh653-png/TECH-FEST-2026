@@ -34,10 +34,16 @@
   <header class="destijl-nav">
     <div class="wrap">
       <div class="destijl-nav-inner">
-        <a class="mondrian-logo" href="index.html">
-          <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span>R.I.D.G.E</span>
-        </a>
+        <div class="mondrian-brand-wrap">
+          <a class="mondrian-logo" href="index.html">
+            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>R.I.D.G.E</span>
+          </a>
+          <div class="society-logos" title="Presented by EVOLVIX [CSE (AI&DS)] & NEMESIS SOCIETY">
+            <img src="evolvix-logo.jpg" alt="EVOLVIX Logo" class="society-logo-img" title="EVOLVIX - CSE (AI&DS)">
+            <img src="nemesis-logo.jpg" alt="NEMESIS Society Logo" class="society-logo-img" title="NEMESIS SOCIETY">
+          </div>
+        </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <a href="coding.html" class="active">01 Coding</a>
@@ -100,7 +106,9 @@
             <div class="inline-flex items-center gap-3 bg-black text-white px-3 py-1.5 mb-6 font-black text-xs uppercase tracking-widest flex-wrap">
               <span>Event 01</span>
               <span>&bull;</span>
-              <span>RGGEC Kangra &bull; 17 November</span>
+              <span>Venue: Room 306 &bull; 17 November</span>
+              <span>&bull;</span>
+              <span>Entry Fee: ₹10 (At Desk)</span>
               <span>&bull;</span>
               <span>Coordinator: Anil Sambyal (<a href="tel:8580699713" class="underline text-yellow-300">8580699713</a>)</span>
             </div>
@@ -112,11 +120,12 @@
             </p>
 
             <div class="flex flex-wrap gap-3 mb-8">
+              <span class="badge-chip bg-[#FFFF00] text-black font-black">Entry Fee: ₹10 (Pay At Desk)</span>
+              <span class="badge-chip bg-black text-white font-black">Venue: Room 306</span>
               <span class="badge-chip bg-white text-black">Individual Participation</span>
               <span class="badge-chip bg-white text-black">3 Rounds</span>
               <span class="badge-chip bg-black text-white">C/C++ &amp; Python Only</span>
               <span class="badge-chip bg-white text-black">AI Tools Not Allowed</span>
-              <span class="badge-chip bg-white text-black">CSE Lab Block</span>
             </div>
 
             <div class="flex flex-wrap gap-4">
@@ -132,15 +141,21 @@
 
           <div class="col-span-12 lg:col-span-4 mt-8 lg:mt-0">
             <div class="destijl-card bg-white text-black">
-              <h3 class="text-xl font-black mb-4 border-b-2 border-black pb-2">Winner Decided By</h3>
-              <ul class="space-y-3 font-black text-base list-disc pl-5">
-                <li>Correctness</li>
-                <li>Test cases passed</li>
-                <li>Time taken</li>
+              <h3 class="text-xl font-black mb-4 border-b-2 border-black pb-2">Event Specifications</h3>
+              <ul class="space-y-3 font-black text-sm">
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Venue:</span>
+                  <span class="font-black text-right">Room 306</span>
+                </li>
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Entry Fee:</span>
+                  <span class="font-black text-[#FF0000]">₹10 (Payable at Desk)</span>
+                </li>
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Judging:</span>
+                  <span class="font-black">Correctness &bull; Speed</span>
+                </li>
               </ul>
-              <div class="mt-6 pt-4 border-t-2 border-black text-xs font-bold uppercase text-neutral-600">
-                Automated test evaluation &bull; Immediate score verification
-              </div>
               <div class="mt-4 pt-4 border-t-2 border-black">
                 <div class="text-[11px] font-black uppercase tracking-wider text-neutral-500">Event Coordinator</div>
                 <div class="text-base font-black text-black">Anil Sambyal</div>
@@ -318,10 +333,10 @@
               Registration Form
             </span>
             <h2 class="text-3xl font-black">Register for Challenge &ndash; Coding</h2>
-            <p class="text-sm font-bold text-neutral-600 mt-2">Free entry for college students &bull; 17 November at RGGEC Kangra</p>
+            <p class="text-sm font-bold text-neutral-600 mt-2">Entry Fee: ₹10 &bull; Payable at Event Desk in Room 306 &bull; 17 November</p>
           </div>
 
-          <form onsubmit="handleEventRegister(event, 'Challenge – Coding')" class="destijl-card bg-neutral-50 space-y-4">
+          <form onsubmit="handleEventRegister(event, 'Challenge – Coding (Room 306 · ₹10)')" class="destijl-card bg-neutral-50 space-y-4">
             <div>
               <label class="block font-black text-xs uppercase tracking-wider mb-1" for="name">Full Name *</label>
               <input type="text" id="name" required class="destijl-input" placeholder="e.g. Aarav Sharma">
@@ -341,6 +356,10 @@
               <input type="email" id="email" required class="destijl-input" placeholder="name@rggec.ac.in">
             </div>
             <div>
+              <label class="block font-black text-xs uppercase tracking-wider mb-1">Official Entry Fee &amp; Venue</label>
+              <input type="text" readonly class="destijl-input bg-yellow-100 font-black text-black" value="₹10 Entry Fee • Room 306 (Collected on Desk)">
+            </div>
+            <div>
               <label class="block font-black text-xs uppercase tracking-wider mb-1" for="lang">Participant's Choice of Language (for Round 3)</label>
               <select id="lang" class="destijl-select font-black">
                 <option value="C / C++ (GCC 13, C++20)">C / C++ (GCC 13, C++20)</option>
@@ -351,7 +370,7 @@
               </p>
             </div>
             <button type="submit" class="btn-destijl btn-black w-full text-base py-4 mt-2">
-              Confirm Coding Challenge Registration &rarr;
+              Confirm Coding Challenge Registration (₹10) &rarr;
             </button>
           </form>
         </div>
@@ -393,10 +412,16 @@
     <div class="wrap">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-neutral-800 text-xs font-bold text-neutral-400">
         <div>
-          <a class="mondrian-logo text-white inline-flex mb-2" href="index.html">
-            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
-            <span>R.I.D.G.E</span>
-          </a>
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <a class="mondrian-logo text-white inline-flex" href="index.html">
+              <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>R.I.D.G.E</span>
+            </a>
+            <div class="society-logos border-neutral-700">
+              <img src="evolvix-logo.jpg" alt="EVOLVIX Logo" class="society-logo-img" title="EVOLVIX CSE (AI&DS)">
+              <img src="nemesis-logo.jpg" alt="NEMESIS Society Logo" class="society-logo-img" title="NEMESIS SOCIETY">
+            </div>
+          </div>
           <p>RGGEC Kangra &bull; 17 November</p>
         </div>
         <div class="flex flex-wrap gap-4">

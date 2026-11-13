@@ -45,10 +45,16 @@
   <header class="destijl-nav">
     <div class="wrap">
       <div class="destijl-nav-inner">
-        <a class="mondrian-logo" href="index.html">
-          <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span>R.I.D.G.E</span>
-        </a>
+        <div class="mondrian-brand-wrap">
+          <a class="mondrian-logo" href="index.html">
+            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>R.I.D.G.E</span>
+          </a>
+          <div class="society-logos" title="Presented by EVOLVIX [CSE (AI&DS)] & NEMESIS SOCIETY">
+            <img src="evolvix-logo.jpg" alt="EVOLVIX Logo" class="society-logo-img" title="EVOLVIX - CSE (AI&DS)">
+            <img src="nemesis-logo.jpg" alt="NEMESIS Society Logo" class="society-logo-img" title="NEMESIS SOCIETY">
+          </div>
+        </div>
 
         <!-- Desktop Navigation Links -->
         <nav class="nav-links">
@@ -74,13 +80,12 @@
     <!-- Mobile Drawer -->
     <div class="mobile-drawer" id="mobileDrawer">
       <a href="#events" onclick="closeMobileMenu()">All 5 Events Overview</a>
-      <a href="coding.html">01 Challenge &ndash; Coding (Dedicated Page) &rarr;</a>
-      <a href="typing-race.html">02 Typing Race (Dedicated Page) &rarr;</a>
-      <a href="web-development.html">03 Web Development (Dedicated Page) &rarr;</a>
-      <a href="prompt-meme-battle.html">04 Prompt Meme Battle (Dedicated Page) &rarr;</a>
-      <a href="soldering-competition.html">05 Soldering Competition (Dedicated Page) &rarr;</a>
+      <a href="coding.html">01 Challenge &ndash; Coding (Room 306 &bull; ₹10) &rarr;</a>
+      <a href="typing-race.html">02 Typing Race (MAT Lab &bull; ₹10) &rarr;</a>
+      <a href="web-development.html">03 Web Development (Room 306 &bull; ₹10) &rarr;</a>
+      <a href="prompt-meme-battle.html">04 Prompt Meme Battle (Room 406 &bull; ₹10) &rarr;</a>
+      <a href="soldering-competition.html">05 Soldering Competition (Electronics Lab &bull; ₹20) &rarr;</a>
       <a href="#matrix" onclick="closeMobileMenu()">Event Matrix</a>
-      <a href="#join" onclick="closeMobileMenu()">Ways to Join</a>
       <a href="javascript:void(0)" onclick="closeMobileMenu(); openRegistrationModal();" class="yellow-block font-black">Register Now &rarr;</a>
     </div>
   </header>
@@ -93,10 +98,14 @@
       <div class="wrap">
         <div class="destijl-grid items-center">
           <div class="col-span-12 lg:col-span-7">
-            <div class="inline-flex items-center gap-3 bx px-3 py-1.5 mb-6 bg-white">
+            <div class="inline-flex items-center gap-3 bx px-3 py-1.5 mb-6 bg-white flex-wrap">
               <span class="inline-block w-3 h-3 bg-[#FF0000] border border-black"></span>
               <span class="font-black text-xs md:text-sm tracking-wider uppercase">
                 R.I.D.G.E 2026 &bull; RGGEC Kangra &bull; 17 November
+              </span>
+              <span class="text-neutral-400 font-bold hidden sm:inline">&bull;</span>
+              <span class="font-black text-xs tracking-wider uppercase text-neutral-800">
+                Presented by <strong>EVOLVIX</strong> &amp; <strong>NEMESIS SOCIETY</strong>
               </span>
             </div>
 
@@ -112,7 +121,7 @@
               Five competitions, one fest. Pick your event, read the rules, and show up ready to win.
             </p>
             <p class="text-base font-extrabold text-neutral-800 mb-8">
-              Now featuring the Soldering Competition alongside Coding, Typing, Web Dev and Meme Battle.
+              Entry fee: ₹10 for Events 1&ndash;4 &bull; ₹20 for Soldering &bull; <strong>All fees collected at event desk.</strong>
             </p>
 
             <div class="flex flex-wrap items-center gap-4">
@@ -131,16 +140,16 @@
                 <p class="text-lg font-black">17 Nov</p>
               </div>
               <div class="border-l-2 border-black pl-3">
-                <p class="text-xs uppercase font-extrabold text-neutral-500">College</p>
-                <p class="text-lg font-black">RGGEC Kangra</p>
+                <p class="text-xs uppercase font-extrabold text-neutral-500">Venues</p>
+                <p class="text-lg font-black">306 &bull; 406 &bull; Labs</p>
               </div>
               <div class="border-l-2 border-black pl-3">
-                <p class="text-xs uppercase font-extrabold text-neutral-500">Total Events</p>
-                <p class="text-lg font-black">5 Arenas</p>
+                <p class="text-xs uppercase font-extrabold text-neutral-500">Entry Fee</p>
+                <p class="text-lg font-black text-[#FF0000]">₹10 / ₹20</p>
               </div>
               <div class="border-l-2 border-black pl-3">
-                <p class="text-xs uppercase font-extrabold text-neutral-500">Hosting</p>
-                <p class="text-lg font-black">GitHub Pages</p>
+                <p class="text-xs uppercase font-extrabold text-neutral-500">Payment</p>
+                <p class="text-lg font-black">At Event Desk</p>
               </div>
             </div>
           </div>
@@ -151,10 +160,10 @@
                 <div class="hero-mondrian-grid" role="region" aria-label="Interactive 3D Neoplastic Event Navigator">
                   
                   <!-- 01 CODING (Top-Left, Iconic Large Red Block) -->
-                  <a href="coding.html" class="block red-block canvas-event-block text-white" data-event-id="01" style="grid-area: 1 / 1 / 5 / 4;" title="01 Challenge – Coding: 3 Rounds, Solo">
+                  <a href="coding.html" class="block red-block canvas-event-block text-white" data-event-id="01" style="grid-area: 1 / 1 / 5 / 4;" title="01 Challenge – Coding: Room 306 · ₹10 Entry">
                     <div class="canvas-block-top">
                       <span class="canvas-num">01</span>
-                      <span class="canvas-tag bg-black text-white">SOLO</span>
+                      <span class="canvas-tag bg-black text-white">₹10 &bull; RM 306</span>
                     </div>
                     <div class="canvas-block-bottom">
                       <span class="canvas-title">CODING</span>
@@ -163,10 +172,10 @@
                   </a>
 
                   <!-- 02 TYPING (Top-Right, Electric Blue Block) -->
-                  <a href="typing-race.html" class="block blue-block canvas-event-block text-white" data-event-id="02" style="grid-area: 1 / 4 / 3 / 7;" title="02 Typing Race: Speed & Accuracy">
+                  <a href="typing-race.html" class="block blue-block canvas-event-block text-white" data-event-id="02" style="grid-area: 1 / 4 / 3 / 7;" title="02 Typing Race: MAT Lab · ₹10 Entry">
                     <div class="canvas-block-top">
                       <span class="canvas-num">02</span>
-                      <span class="canvas-tag bg-black text-white">2 MIN</span>
+                      <span class="canvas-tag bg-black text-white">₹10 &bull; MAT LAB</span>
                     </div>
                     <div class="canvas-block-bottom">
                       <span class="canvas-title">TYPING</span>
@@ -175,10 +184,10 @@
                   </a>
 
                   <!-- 03 WEB DEV (Middle-Right, Bright Yellow Block) -->
-                  <a href="web-development.html" class="block yellow-block canvas-event-block text-black" data-event-id="03" style="grid-area: 3 / 4 / 5 / 7;" title="03 Web Development: Teams of 1–4">
+                  <a href="web-development.html" class="block yellow-block canvas-event-block text-black" data-event-id="03" style="grid-area: 3 / 4 / 5 / 7;" title="03 Web Development: Room 306 · 2–3 Hrs · ₹10 Entry">
                     <div class="canvas-block-top">
                       <span class="canvas-num">03 WEB</span>
-                      <span class="canvas-tag bg-black text-white">TEAMS 1-4</span>
+                      <span class="canvas-tag bg-black text-white">₹10 &bull; RM 306</span>
                     </div>
                     <div class="canvas-block-bottom">
                       <span class="canvas-title">DEV</span>
@@ -187,10 +196,10 @@
                   </a>
 
                   <!-- 04 MEME BATTLE (Bottom-Left, Sharp Neoplastic White Block) -->
-                  <a href="prompt-meme-battle.html" class="block white-block canvas-event-block text-black" data-event-id="04" style="grid-area: 5 / 1 / 7 / 4;" title="04 Prompt Meme Battle: AI Prompting & Humour">
+                  <a href="prompt-meme-battle.html" class="block white-block canvas-event-block text-black" data-event-id="04" style="grid-area: 5 / 1 / 7 / 4;" title="04 Prompt Meme Battle: Room 406 · ₹10 Entry">
                     <div class="canvas-block-top">
                       <span class="canvas-num">04 MEME</span>
-                      <span class="canvas-tag bg-black text-white">GEN-AI</span>
+                      <span class="canvas-tag bg-black text-white">₹10 &bull; RM 406</span>
                     </div>
                     <div class="canvas-block-bottom">
                       <span class="canvas-title">BATTLE</span>
@@ -199,10 +208,10 @@
                   </a>
 
                   <!-- 05 SOLDERING (Bottom-Right, Precision Red Block) -->
-                  <a href="soldering-competition.html" class="block red-block canvas-event-block text-white" data-event-id="05" style="grid-area: 5 / 4 / 7 / 7;" title="05 Soldering Competition: 3 Rounds, ₹20 Entry">
+                  <a href="soldering-competition.html" class="block red-block canvas-event-block text-white" data-event-id="05" style="grid-area: 5 / 4 / 7 / 7;" title="05 Soldering Competition: Electronics Lab · ₹20 Entry">
                     <div class="canvas-block-top">
                       <span class="canvas-num">05</span>
-                      <span class="canvas-tag bg-yellow-400 text-black">₹20</span>
+                      <span class="canvas-tag bg-yellow-400 text-black">₹20 &bull; LAB</span>
                     </div>
                     <div class="canvas-block-bottom">
                       <span class="canvas-title">SOLDERING</span>
@@ -260,21 +269,25 @@
       <div class="marquee-track">
         <div class="marquee-item">
           <span>R.I.D.G.E 2026</span><span class="marquee-cube bg-[#FF0000]"></span>
-          <span>01 Challenge &ndash; Coding</span><span class="marquee-cube bg-[#FF0000]"></span>
-          <span>02 Typing Race</span><span class="marquee-cube bg-[#0000FF]"></span>
-          <span>03 Web Development (2&ndash;3 Hrs)</span><span class="marquee-cube bg-[#FFFF00]"></span>
-          <span>04 Prompt Meme Battle</span><span class="marquee-cube bg-[#FFFFFF]"></span>
-          <span>05 Soldering Competition</span><span class="marquee-cube bg-[#FF0000]"></span>
-          <span>RGGEC Kangra &bull; 17 November</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>EVOLVIX &amp; NEMESIS SOCIETY</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>01 Coding (Room 306 &bull; ₹10)</span><span class="marquee-cube bg-[#FF0000]"></span>
+          <span>02 Typing Race (MAT Lab &bull; ₹10)</span><span class="marquee-cube bg-[#0000FF]"></span>
+          <span>03 Web Development (Room 306 &bull; 2&ndash;3 Hrs &bull; ₹10)</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>04 Prompt Meme Battle (Room 406 &bull; ₹10)</span><span class="marquee-cube bg-[#FFFFFF]"></span>
+          <span>05 Soldering Competition (Electronics Lab &bull; ₹20)</span><span class="marquee-cube bg-[#FF0000]"></span>
+          <span>Fee Collected At Desk</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>RGGEC Kangra &bull; 17 November</span><span class="marquee-cube bg-[#0000FF]"></span>
         </div>
         <div class="marquee-item">
           <span>R.I.D.G.E 2026</span><span class="marquee-cube bg-[#FF0000]"></span>
-          <span>01 Challenge &ndash; Coding</span><span class="marquee-cube bg-[#FF0000]"></span>
-          <span>02 Typing Race</span><span class="marquee-cube bg-[#0000FF]"></span>
-          <span>03 Web Development (2&ndash;3 Hrs)</span><span class="marquee-cube bg-[#FFFF00]"></span>
-          <span>04 Prompt Meme Battle</span><span class="marquee-cube bg-[#FFFFFF]"></span>
-          <span>05 Soldering Competition</span><span class="marquee-cube bg-[#FF0000]"></span>
-          <span>RGGEC Kangra &bull; 17 November</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>EVOLVIX &amp; NEMESIS SOCIETY</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>01 Coding (Room 306 &bull; ₹10)</span><span class="marquee-cube bg-[#FF0000]"></span>
+          <span>02 Typing Race (MAT Lab &bull; ₹10)</span><span class="marquee-cube bg-[#0000FF]"></span>
+          <span>03 Web Development (Room 306 &bull; 2&ndash;3 Hrs &bull; ₹10)</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>04 Prompt Meme Battle (Room 406 &bull; ₹10)</span><span class="marquee-cube bg-[#FFFFFF]"></span>
+          <span>05 Soldering Competition (Electronics Lab &bull; ₹20)</span><span class="marquee-cube bg-[#FF0000]"></span>
+          <span>Fee Collected At Desk</span><span class="marquee-cube bg-[#FFFF00]"></span>
+          <span>RGGEC Kangra &bull; 17 November</span><span class="marquee-cube bg-[#0000FF]"></span>
         </div>
       </div>
     </div>
@@ -341,6 +354,8 @@
                 </p>
 
                 <div class="flex flex-wrap gap-2">
+                  <span class="badge-chip bg-[#FF0000] text-white font-black">Fee: ₹10 (At Desk)</span>
+                  <span class="badge-chip bg-black text-white font-black">Venue: Room 306</span>
                   <span class="badge-chip">Individual</span>
                   <span class="badge-chip">3 rounds</span>
                   <span class="badge-chip bg-black text-white">C/C++ &amp; Python Only</span>
@@ -386,9 +401,10 @@
                 </p>
 
                 <div class="flex flex-wrap gap-2">
+                  <span class="badge-chip bg-[#0000FF] text-white font-black">Fee: ₹10 (At Desk)</span>
+                  <span class="badge-chip bg-black text-white font-black">Venue: MAT Lab</span>
                   <span class="badge-chip">Individual</span>
                   <span class="badge-chip">2 min per participant</span>
-                  <span class="badge-chip bg-[#0000FF] text-white">Venue: MAT Lab</span>
                   <span class="badge-chip bg-neutral-100 text-black">Coordinator: Mohit Jaswal &bull; <a href="tel:8580699713" class="underline font-black">8580699713</a></span>
                 </div>
 
@@ -430,10 +446,12 @@
                 </p>
 
                 <div class="flex flex-wrap gap-2">
+                  <span class="badge-chip bg-[#FFFF00] text-black font-black">Fee: ₹10 (At Desk)</span>
+                  <span class="badge-chip bg-black text-white font-black">Venue: Room 306</span>
                   <span class="badge-chip">Individual or team</span>
                   <span class="badge-chip">Max 4 members</span>
                   <span class="badge-chip bg-[#0000FF] text-white font-black">Duration: 2&ndash;3 Hours</span>
-                  <span class="badge-chip bg-[#FFFF00]">AI tools allowed</span>
+                  <span class="badge-chip bg-neutral-200 text-black">AI tools allowed</span>
                   <span class="badge-chip bg-neutral-100 text-black">Coordinator: Vaishnavi &bull; <a href="tel:8580699713" class="underline font-black">8580699713</a></span>
                 </div>
 
@@ -476,6 +494,8 @@
                 </p>
 
                 <div class="flex flex-wrap gap-2">
+                  <span class="badge-chip bg-white text-black font-black">Fee: ₹10 (At Desk)</span>
+                  <span class="badge-chip bg-black text-white font-black">Venue: Room 406</span>
                   <span class="badge-chip">Individual or team of 2</span>
                   <span class="badge-chip">5&ndash;10 min per round</span>
                   <span class="badge-chip bg-black text-white">AI tools allowed</span>
@@ -520,9 +540,10 @@
                 </p>
 
                 <div class="flex flex-wrap gap-2">
+                  <span class="badge-chip bg-[#FF0000] text-white font-black">Fee: ₹20 (At Desk)</span>
+                  <span class="badge-chip bg-black text-white font-black">Venue: Electronics Lab</span>
                   <span class="badge-chip">Individual Participation</span>
                   <span class="badge-chip">3 Rounds (45 Min Total)</span>
-                  <span class="badge-chip bg-[#FF0000] text-white font-black">Entry Fee: ₹20</span>
                   <span class="badge-chip bg-black text-white">Capacity: 20&ndash;30</span>
                   <span class="badge-chip bg-yellow-300 text-black font-black">Coordinator: Ramneek &bull; <a href="tel:8580699713" class="underline">8580699713</a></span>
                   <span class="badge-chip bg-[#0000FF] text-white">Prizes for Top 3</span>
@@ -588,7 +609,7 @@
                 <th class="p-4 border-r border-neutral-700">Event</th>
                 <th class="p-4 border-r border-neutral-700">Participation</th>
                 <th class="p-4 border-r border-neutral-700">Rounds & Time</th>
-                <th class="p-4 border-r border-neutral-700">Fee / Policy</th>
+                <th class="p-4 border-r border-neutral-700">Fee (Pay At Desk) / Policy</th>
                 <th class="p-4 border-r border-neutral-700">Venue & In-Charge</th>
                 <th class="p-4">Dedicated Page</th>
               </tr>
@@ -598,15 +619,15 @@
                 <td class="p-4 font-black border-r border-black bg-red-50 text-[#FF0000]">01 Challenge &ndash; Coding</td>
                 <td class="p-4 border-r border-black">Individual</td>
                 <td class="p-4 border-r border-black">3 Rounds (20-25m, 25-30m, 45-60m)</td>
-                <td class="p-4 border-r border-black text-[#FF0000]">Free &bull; No AI</td>
-                <td class="p-4 border-r border-black">CSE Lab &bull; <strong>Anil Sambyal</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
+                <td class="p-4 border-r border-black font-black text-[#FF0000]">₹10 &bull; No AI</td>
+                <td class="p-4 border-r border-black">Room 306 &bull; <strong>Anil Sambyal</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
                 <td class="p-4"><a href="coding.html" class="text-black underline hover:text-[#FF0000]">coding.html &rarr;</a></td>
               </tr>
               <tr>
                 <td class="p-4 font-black border-r border-black bg-blue-50 text-[#0000FF]">02 Typing Race</td>
                 <td class="p-4 border-r border-black">Individual</td>
                 <td class="p-4 border-r border-black">Exactly 2 Minutes</td>
-                <td class="p-4 border-r border-black">Free &bull; No Internet</td>
+                <td class="p-4 border-r border-black font-black text-[#0000FF]">₹10 &bull; No Internet</td>
                 <td class="p-4 border-r border-black">MAT Lab &bull; <strong>Mohit Jaswal</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
                 <td class="p-4"><a href="typing-race.html" class="text-black underline hover:text-[#0000FF]">typing-race.html &rarr;</a></td>
               </tr>
@@ -614,16 +635,16 @@
                 <td class="p-4 font-black border-r border-black bg-yellow-50 text-black">03 Web Development</td>
                 <td class="p-4 border-r border-black">Solo or Team (Max 4)</td>
                 <td class="p-4 border-r border-black font-black text-[#0000FF]">2 &ndash; 3 Hours</td>
-                <td class="p-4 border-r border-black text-green-700">Free/Pass &bull; AI Allowed</td>
-                <td class="p-4 border-r border-black">Web Lab &bull; <strong>Vaishnavi</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
+                <td class="p-4 border-r border-black font-black text-black">₹10 &bull; AI Allowed</td>
+                <td class="p-4 border-r border-black">Room 306 &bull; <strong>Vaishnavi</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
                 <td class="p-4"><a href="web-development.html" class="text-black underline hover:text-[#FF0000]">web-development.html &rarr;</a></td>
               </tr>
               <tr>
                 <td class="p-4 font-black border-r border-black bg-neutral-100 text-black">04 Prompt Meme Battle</td>
                 <td class="p-4 border-r border-black">Solo or Team of 2</td>
                 <td class="p-4 border-r border-black">5&ndash;10 min per round</td>
-                <td class="p-4 border-r border-black text-green-700">Free/Pass &bull; AI Allowed</td>
-                <td class="p-4 border-r border-black">Auditorium &bull; <strong>Vipul</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
+                <td class="p-4 border-r border-black font-black text-black">₹10 &bull; AI Allowed</td>
+                <td class="p-4 border-r border-black">Room 406 &bull; <strong>Vipul</strong> (<a href="tel:8580699713" class="underline font-black">8580699713</a>)</td>
                 <td class="p-4"><a href="prompt-meme-battle.html" class="text-black underline hover:text-[#FF0000]">prompt-meme-battle.html &rarr;</a></td>
               </tr>
               <tr class="bg-yellow-50">
@@ -636,6 +657,10 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        <div class="mt-4 p-3.5 yellow-block border-2 border-black font-black text-xs uppercase flex items-center justify-between flex-wrap gap-2">
+          <span>📌 Entry fee (₹10 for Events 01&ndash;04, ₹20 for Event 05) will be collected directly at the event desk.</span>
+          <span>Venues: Room 306 &bull; MAT Lab &bull; Room 406 &bull; Electronics Lab</span>
         </div>
       </div>
     </section>
@@ -738,135 +763,7 @@
       </div>
     </section>
 
-    <!-- =============================================================
-         SECTION 6: WAYS TO JOIN / PRICING TIERS
-    ============================================================== -->
-    <section id="join" class="py-16 md:py-24 bg-white bx-b">
-      <div class="wrap">
-        <div class="max-w-2xl mb-14">
-          <span class="inline-block px-3 py-1 bg-black text-white font-black text-xs uppercase tracking-widest mb-3">
-            Registration
-          </span>
-          <h2 class="text-black mb-3">Three ways to join.</h2>
-          <p class="text-lg font-bold text-neutral-700">
-            Your team size decides which events you can enter. Free student pass available. Soldering requires ₹20 entry fee.
-          </p>
-        </div>
 
-        <div class="destijl-grid items-stretch">
-          <!-- Solo -->
-          <div class="col-span-12 md:col-span-4">
-            <div class="destijl-card pricing-card flex flex-col justify-between">
-              <div>
-                <span class="badge-chip mb-4">Solo</span>
-                <h3 class="text-2xl font-black mb-1">Solo</h3>
-                <p class="text-xs font-bold text-neutral-500 uppercase">Single participant entry</p>
-                <div class="my-6 pb-6 border-b-2 border-black">
-                  <span class="text-4xl font-black">Free</span>
-                  <p class="text-xs font-bold text-neutral-600 mt-1">Free entry pass for college students</p>
-                </div>
-                <ul class="space-y-3 font-bold text-sm mb-8">
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Challenge &ndash; Coding</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Typing Race</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Web Development (Solo)</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Prompt Meme Battle (Solo)</span>
-                  </li>
-                </ul>
-              </div>
-              <button onclick="openRegistrationModal('Solo Pass (Free)')" class="btn-destijl btn-black w-full">
-                Join Solo
-              </button>
-            </div>
-          </div>
-
-          <!-- Duo (Highlighted) -->
-          <div class="col-span-12 md:col-span-4">
-            <div class="destijl-card pricing-card is-featured blue-block flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <span class="badge-chip bg-black text-white border-white">Most Popular</span>
-                  <span class="badge-chip bg-[#FFFF00] text-black">2 Members</span>
-                </div>
-                <h3 class="text-2xl font-black mb-1 text-white">Duo</h3>
-                <p class="text-xs font-bold text-neutral-200 uppercase">Team of 2 members</p>
-                <div class="my-6 pb-6 border-b-2 border-white">
-                  <span class="text-4xl font-black text-white">&inr;149</span>
-                  <p class="text-xs font-bold text-neutral-200 mt-1">Per duo pair pass</p>
-                </div>
-                <ul class="space-y-3 font-bold text-sm mb-8 text-white">
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-[#FFFF00]" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Prompt Meme Battle (Team of 2)</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-[#FFFF00]" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Web Development (Pair)</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-[#FFFF00]" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Share one project, split the work</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-[#FFFF00]" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Printed Certificates of Merit</span>
-                  </li>
-                </ul>
-              </div>
-              <button onclick="openRegistrationModal('Duo Pass (₹149)')" class="btn-destijl btn-yellow w-full text-black">
-                Join As A Duo &rarr;
-              </button>
-            </div>
-          </div>
-
-          <!-- Squad -->
-          <div class="col-span-12 md:col-span-4">
-            <div class="destijl-card pricing-card flex flex-col justify-between">
-              <div>
-                <span class="badge-chip mb-4">Squad</span>
-                <h3 class="text-2xl font-black mb-1">Squad</h3>
-                <p class="text-xs font-bold text-neutral-500 uppercase">Up to 4 members</p>
-                <div class="my-6 pb-6 border-b-2 border-black">
-                  <span class="text-4xl font-black">&inr;299</span>
-                  <p class="text-xs font-bold text-neutral-600 mt-1">Per team bundle</p>
-                </div>
-                <ul class="space-y-3 font-bold text-sm mb-8">
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Web Development Competition</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Up to 4 members</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>One topic, one shared build</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <svg class="svg-icon text-black" style="width: 1.2rem; height: 1.2rem;"><use href="#icon-check"/></svg>
-                    <span>Full Fest Kits & Badges</span>
-                  </li>
-                </ul>
-              </div>
-              <button onclick="openRegistrationModal('Squad Pass (₹299)')" class="btn-destijl btn-black w-full">
-                Join As A Squad
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- =============================================================
          SECTION 7: FINAL CTA BANNER
@@ -903,12 +800,18 @@
     <div class="wrap">
       <div class="destijl-grid gap-y-12">
         <div class="col-span-12 lg:col-span-4">
-          <a class="mondrian-logo text-white mb-4 inline-flex" href="index.html">
-            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
-            <span class="text-white font-black text-2xl tracking-tighter">R.I.D.G.E</span>
-          </a>
+          <div class="flex items-center gap-3 mb-4 flex-wrap">
+            <a class="mondrian-logo text-white inline-flex" href="index.html">
+              <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span class="text-white font-black text-2xl tracking-tighter">R.I.D.G.E</span>
+            </a>
+            <div class="society-logos border-neutral-700">
+              <img src="evolvix-logo.jpg" alt="EVOLVIX Logo" class="society-logo-img" title="EVOLVIX CSE (AI&DS)">
+              <img src="nemesis-logo.jpg" alt="NEMESIS Society Logo" class="society-logo-img" title="NEMESIS SOCIETY">
+            </div>
+          </div>
           <p class="text-neutral-300 font-bold text-sm leading-relaxed max-w-sm mb-6">
-            R.I.D.G.E: Coding, typing, web development, prompt meme and soldering competitions for students. RGGEC Kangra, 17 November.
+            R.I.D.G.E 2026: Presented by EVOLVIX &amp; NEMESIS SOCIETY. Coding, typing, web dev, prompt meme &amp; soldering competitions at RGGEC Kangra on 17 November.
           </p>
           <div class="flex items-center gap-3">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 border-2 border-white text-white hover:bg-[#FF0000] hover:text-black transition-all" aria-label="GitHub"><svg class="svg-icon"><use href="#icon-gh"/></svg></a>
@@ -924,8 +827,7 @@
             <li><a href="index.html" class="text-neutral-300 hover:text-[#FFFF00]">Home</a></li>
             <li><a href="#events" class="text-neutral-300 hover:text-[#FFFF00]">All Events</a></li>
             <li><a href="#matrix" class="text-neutral-300 hover:text-[#FFFF00]">Event Matrix</a></li>
-            <li><a href="#why" class="text-neutral-300 hover:text-[#FFFF00]">Why join</a></li>
-            <li><a href="#join" class="text-neutral-300 hover:text-[#FFFF00]">Ways to join</a></li>
+            <li><a href="#why" class="text-neutral-300 hover:text-[#FFFF00]">Rules & Guidelines</a></li>
           </ul>
         </div>
 
@@ -998,25 +900,27 @@
         </div>
 
         <div>
-          <label class="block font-black text-xs uppercase tracking-wider mb-1" for="regEvent">Select Primary Competition *</label>
-          <select id="regEvent" required class="destijl-select">
-            <option value="01 Challenge – Coding">01 Challenge – Coding (3 Rounds · Solo)</option>
-            <option value="02 Typing Race">02 Typing Race (2 min · MAT Lab)</option>
-            <option value="03 Web Development Competition">03 Web Development Competition (Solo/Team)</option>
-            <option value="04 Prompt Meme Battle">04 Prompt Meme Battle (Solo/Duo · GenAI)</option>
-            <option value="05 Soldering Competition">05 Soldering Competition (3 Rounds · ₹20 Entry)</option>
-            <option value="All Competitions Pass">All Competitions Pass</option>
+          <label class="block font-black text-xs uppercase tracking-wider mb-1" for="regEvent">Select Competition *</label>
+          <select id="regEvent" required class="destijl-select font-black" onchange="updateModalFee(this.value)">
+            <option value="01 Challenge – Coding (Room 306 · ₹10)">01 Challenge – Coding (Room 306 &bull; ₹10 Entry)</option>
+            <option value="02 Typing Race (MAT Lab · ₹10)">02 Typing Race (MAT Lab &bull; ₹10 Entry)</option>
+            <option value="03 Web Development (Room 306 · ₹10)">03 Web Development (Room 306 &bull; 2–3 Hrs &bull; ₹10 Entry)</option>
+            <option value="04 Prompt Meme Battle (Room 406 · ₹10)">04 Prompt Meme Battle (Room 406 &bull; ₹10 Entry)</option>
+            <option value="05 Soldering Competition (Electronics Lab · ₹20)">05 Soldering Competition (Electronics Lab &bull; ₹20 Entry)</option>
           </select>
         </div>
 
         <div>
-          <label class="block font-black text-xs uppercase tracking-wider mb-1" for="regPassTier">Selected Entry Pass</label>
-          <input type="text" id="regPassTier" readonly class="destijl-input bg-neutral-100 font-black" value="Solo Pass (Free)">
+          <label class="block font-black text-xs uppercase tracking-wider mb-1" for="regPassTier">Venue &amp; Entry Fee</label>
+          <input type="text" id="regPassTier" readonly class="destijl-input bg-yellow-100 text-black font-black" value="₹10 Entry Fee • Room 306 (Collected on Desk)">
+          <p class="text-[11px] font-bold text-neutral-600 mt-1">
+            * Note: Fee is ₹10 for Events 01&ndash;04, ₹20 for Soldering. <strong>All fees will be collected directly at the event desk.</strong>
+          </p>
         </div>
 
         <div class="pt-4">
           <button type="submit" class="btn-destijl btn-black w-full text-base py-4">
-            Confirm & Complete Registration &rarr;
+            Confirm Registration &rarr;
           </button>
         </div>
       </form>
@@ -1035,9 +939,36 @@
 
     const modal = document.getElementById('regModal');
     const passTierInput = document.getElementById('regPassTier');
-    window.openRegistrationModal = function(tier = 'Solo Pass (Free)') {
+    const eventSelect = document.getElementById('regEvent');
+
+    window.updateModalFee = function(val) {
+      if (!passTierInput) return;
+      if (val.includes('05 Soldering')) {
+        passTierInput.value = '₹20 Entry Fee • Electronics Lab (Collected on Desk)';
+      } else if (val.includes('01 Challenge')) {
+        passTierInput.value = '₹10 Entry Fee • Room 306 (Collected on Desk)';
+      } else if (val.includes('02 Typing')) {
+        passTierInput.value = '₹10 Entry Fee • MAT Lab (Collected on Desk)';
+      } else if (val.includes('03 Web Development')) {
+        passTierInput.value = '₹10 Entry Fee • Room 306 (Collected on Desk)';
+      } else if (val.includes('04 Prompt Meme')) {
+        passTierInput.value = '₹10 Entry Fee • Room 406 (Collected on Desk)';
+      } else {
+        passTierInput.value = '₹10 Entry Fee (Collected on Desk)';
+      }
+    };
+
+    window.openRegistrationModal = function(eventName = '') {
       if (!modal) return;
-      if (passTierInput) passTierInput.value = tier;
+      if (eventName && eventSelect) {
+        for (let i = 0; i < eventSelect.options.length; i++) {
+          if (eventSelect.options[i].value.toLowerCase().includes(eventName.toLowerCase().replace(/solo |contender |-/g, '').trim())) {
+            eventSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      if (eventSelect) updateModalFee(eventSelect.value);
       modal.classList.add('is-active');
       document.body.style.overflow = 'hidden';
     };

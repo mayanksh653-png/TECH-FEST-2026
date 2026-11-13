@@ -29,10 +29,16 @@
   <header class="destijl-nav">
     <div class="wrap">
       <div class="destijl-nav-inner">
-        <a class="mondrian-logo" href="index.html">
-          <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span>R.I.D.G.E</span>
-        </a>
+        <div class="mondrian-brand-wrap">
+          <a class="mondrian-logo" href="index.html">
+            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>R.I.D.G.E</span>
+          </a>
+          <div class="society-logos" title="Presented by EVOLVIX [CSE (AI&DS)] & NEMESIS SOCIETY">
+            <img src="evolvix-logo.jpg" alt="EVOLVIX Logo" class="society-logo-img" title="EVOLVIX - CSE (AI&DS)">
+            <img src="nemesis-logo.jpg" alt="NEMESIS Society Logo" class="society-logo-img" title="NEMESIS SOCIETY">
+          </div>
+        </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <a href="coding.html">01 Coding</a>
@@ -97,6 +103,8 @@
               <span>&bull;</span>
               <span>Venue: MAT Lab &bull; 17 November</span>
               <span>&bull;</span>
+              <span>Entry Fee: ₹10 (At Desk)</span>
+              <span>&bull;</span>
               <span>Coordinator: Mohit Jaswal (<a href="tel:8580699713" class="underline text-[#0000FF]">8580699713</a>)</span>
             </div>
             <h1 class="text-white text-3xl sm:text-5xl lg:text-7xl font-black mb-6 break-words">
@@ -107,9 +115,10 @@
             </p>
 
             <div class="flex flex-wrap gap-3 mb-8">
+              <span class="badge-chip bg-[#FFFF00] text-black font-black">Entry Fee: ₹10 (Pay At Desk)</span>
+              <span class="badge-chip bg-black text-white font-black">Venue: MAT Lab</span>
               <span class="badge-chip bg-white text-black">Individual Entry</span>
               <span class="badge-chip bg-white text-black">2 Min Per Participant</span>
-              <span class="badge-chip bg-[#FFFF00] text-black">Venue: MAT Lab</span>
               <span class="badge-chip bg-white text-black">WPM + Accuracy Scoring</span>
             </div>
 
@@ -232,10 +241,10 @@
               Registration Form
             </span>
             <h2 class="text-3xl font-black">Register for Typing Race</h2>
-            <p class="text-sm font-bold text-neutral-600 mt-2">MAT Lab Slot Entry &bull; 17 November at RGGEC Kangra</p>
+            <p class="text-sm font-bold text-neutral-600 mt-2">Entry Fee: ₹10 &bull; Payable at MAT Lab Desk &bull; 17 November</p>
           </div>
 
-          <form onsubmit="handleEventRegister(event, 'Typing Race')" class="destijl-card bg-neutral-50 space-y-4">
+          <form onsubmit="handleEventRegister(event, 'Typing Race (MAT Lab · ₹10)')" class="destijl-card bg-neutral-50 space-y-4">
             <div>
               <label class="block font-black text-xs uppercase tracking-wider mb-1" for="name">Full Name *</label>
               <input type="text" id="name" required class="destijl-input" placeholder="e.g. Priya Verma">
@@ -255,11 +264,11 @@
               <input type="email" id="email" required class="destijl-input" placeholder="name@rggec.ac.in">
             </div>
             <div>
-              <label class="block font-black text-xs uppercase tracking-wider mb-1">Assigned Venue</label>
-              <input type="text" readonly class="destijl-input bg-neutral-200 font-black" value="MAT Lab (Computer Block Ground Floor)">
+              <label class="block font-black text-xs uppercase tracking-wider mb-1">Official Entry Fee &amp; Venue</label>
+              <input type="text" readonly class="destijl-input bg-yellow-100 font-black text-black" value="₹10 Entry Fee • MAT Lab (Collected on Desk)">
             </div>
             <button type="submit" class="btn-destijl btn-blue w-full text-base py-4 mt-2">
-              Confirm Typing Race Slot &rarr;
+              Confirm Typing Race Slot (₹10) &rarr;
             </button>
           </form>
         </div>
@@ -301,10 +310,16 @@
     <div class="wrap">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-neutral-800 text-xs font-bold text-neutral-400">
         <div>
-          <a class="mondrian-logo text-white inline-flex mb-2" href="index.html">
-            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
-            <span>R.I.D.G.E</span>
-          </a>
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <a class="mondrian-logo text-white inline-flex" href="index.html">
+              <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>R.I.D.G.E</span>
+            </a>
+            <div class="society-logos border-neutral-700">
+              <img src="evolvix-logo.jpg" alt="EVOLVIX Logo" class="society-logo-img" title="EVOLVIX CSE (AI&DS)">
+              <img src="nemesis-logo.jpg" alt="NEMESIS Society Logo" class="society-logo-img" title="NEMESIS SOCIETY">
+            </div>
+          </div>
           <p>RGGEC Kangra &bull; 17 November</p>
         </div>
         <div class="flex flex-wrap gap-4">
