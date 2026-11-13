@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Soldering Competition | Tech Fest 2026 | RGGEC Kangra</title>
+  <meta name="description" content="Soldering Competition: Skills · Precision · Practical Electronics. A 3-round hands-on circuit assembly competition at RGGEC Kangra on 17 November. Entry Fee: ₹20.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+<body id="top">
+
+  <!-- SVG Icons -->
+  <svg width="0" height="0" style="position:absolute; display:none" aria-hidden="true">
+    <defs>
+      <symbol id="icon-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></symbol>
+      <symbol id="icon-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></symbol>
+      <symbol id="icon-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></symbol>
+      <symbol id="icon-chip" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"></rect><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"></path></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></symbol>
+    </defs>
+  </svg>
+
+  <!-- Sticky Navbar -->
+  <header class="destijl-nav">
+    <div class="wrap">
+      <div class="destijl-nav-inner">
+        <a class="mondrian-logo" href="index.html">
+          <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span>Tech Fest</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="coding.html">01 Coding</a>
+          <a href="typing-race.html">02 Typing</a>
+          <a href="web-development.html">03 Web Dev</a>
+          <a href="prompt-meme-battle.html">04 Meme Battle</a>
+          <a href="soldering-competition.html" class="active">05 Soldering</a>
+          <a href="#register" class="btn-destijl btn-yellow ml-4" style="padding: 10px 20px; font-size: 0.9rem;">Register (₹20)</a>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+          <svg class="svg-icon"><use href="#icon-menu"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="index.html">Home</a>
+      <a href="coding.html">01 Challenge &ndash; Coding</a>
+      <a href="typing-race.html">02 Typing Race</a>
+      <a href="web-development.html">03 Web Development</a>
+      <a href="prompt-meme-battle.html">04 Prompt Meme Battle</a>
+      <a href="soldering-competition.html" class="yellow-block font-black">05 Soldering Competition</a>
+      <a href="#register" class="font-black">Register for Soldering (₹20) &rarr;</a>
+    </div>
+  </header>
+
+  <!-- 5-Event Quick Selector Bar (Image 1 replica) -->
+  <div class="border-b-4 border-black bg-white">
+    <div class="wrap">
+      <div class="destijl-strip-selector border-x-0 border-t-0 shadow-none" role="navigation" aria-label="Event Switcher">
+        <a href="coding.html" class="strip-item" data-event-target="01" title="01 Challenge – Coding">
+          <span class="strip-num">01</span>
+          <span class="strip-title">CODING</span>
+        </a>
+        <a href="typing-race.html" class="strip-item" data-event-target="02" title="02 Typing Race">
+          <span class="strip-num">02</span>
+          <span class="strip-title">TYPING</span>
+        </a>
+        <a href="web-development.html" class="strip-item" data-event-target="03" title="03 Web Development">
+          <span class="strip-num">03 WEB</span>
+          <span class="strip-title">DEV</span>
+        </a>
+        <a href="prompt-meme-battle.html" class="strip-item" data-event-target="04" title="04 Prompt Meme Battle">
+          <span class="strip-num">04 MEME</span>
+          <span class="strip-title">BATTLE</span>
+        </a>
+        <a href="soldering-competition.html" class="strip-item is-active" data-event-target="05" title="05 Soldering Competition">
+          <span class="strip-num">05</span>
+          <span class="strip-title">SOLDERING</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Event Hero -->
+    <section class="yellow-block bx-b py-14 md:py-20 text-black">
+      <div class="wrap">
+        <div class="destijl-grid items-center">
+          <div class="col-span-12 lg:col-span-8">
+            <div class="inline-flex items-center gap-3 bg-black text-white px-3 py-1.5 mb-6 font-black text-xs uppercase tracking-widest">
+              <span>Event 05</span>
+              <span>&bull;</span>
+              <span>RGGEC Kangra &bull; 17 November</span>
+              <span>&bull;</span>
+              <span>Coordinator: Ramneek</span>
+            </div>
+            <h1 class="text-black text-3xl sm:text-5xl lg:text-7xl font-black mb-6 break-words">
+              Soldering Competition
+            </h1>
+            <p class="text-xl md:text-2xl font-black text-black max-w-2xl mb-8 leading-snug">
+              Skills &bull; Precision &bull; Practical Electronics. A hands-on circuit assembly competition testing soldering quality, component identification, and circuit-building mastery.
+            </p>
+
+            <div class="flex flex-wrap gap-3 mb-8">
+              <span class="badge-chip bg-white text-black">Individual Participation</span>
+              <span class="badge-chip bg-white text-black">3 Rounds (45 Min Total)</span>
+              <span class="badge-chip bg-[#FF0000] text-white">Entry Fee: ₹20</span>
+              <span class="badge-chip bg-white text-black">Capacity: 20&ndash;30 Participants</span>
+              <span class="badge-chip bg-black text-white">Equipment Provided</span>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a href="#register" class="btn-destijl btn-black">
+                Register (₹20 Entry)
+                <svg class="svg-icon"><use href="#icon-arrow"/></svg>
+              </a>
+              <a href="#rounds" class="btn-destijl bg-white text-black">
+                View 3 Rounds & Evaluation
+              </a>
+            </div>
+          </div>
+
+          <div class="col-span-12 lg:col-span-4 mt-8 lg:mt-0">
+            <div class="destijl-card bg-white text-black">
+              <h3 class="text-xl font-black mb-3 border-b-2 border-black pb-2">Event Quick Specs</h3>
+              <ul class="space-y-3 font-bold text-sm">
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Main Skills:</span>
+                  <span class="font-black text-right">Precision, Electronics, Assembly</span>
+                </li>
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Total Duration:</span>
+                  <span class="font-black">45 Minutes</span>
+                </li>
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Entry Fee:</span>
+                  <span class="font-black text-[#FF0000] text-base">₹20 per participant</span>
+                </li>
+                <li class="flex justify-between border-b border-neutral-300 pb-1.5">
+                  <span class="text-neutral-600">Coordinator:</span>
+                  <span class="font-black">Ramneek (2–3 Volunteers)</span>
+                </li>
+                <li class="flex justify-between">
+                  <span class="text-neutral-600">Prizes:</span>
+                  <span class="font-black">Top 3 Winners (1st, 2nd, 3rd)</span>
+                </li>
+              </ul>
+              <div class="mt-4 p-2.5 bg-neutral-100 border border-black text-xs font-bold">
+                Soldering stations, components, perfboards, and multimeters provided on site.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 3 Rounds Section -->
+    <section id="rounds" class="py-16 md:py-24 bg-white bx-b">
+      <div class="wrap">
+        <div class="max-w-2xl mb-12">
+          <span class="inline-block px-3 py-1 bg-black text-white font-black text-xs uppercase tracking-widest mb-3">
+            Round Breakdown
+          </span>
+          <h2 class="text-black">Three Progressive Rounds (45 Min)</h2>
+          <p class="text-lg font-bold text-neutral-700 mt-2">
+            The competition tests your practical soldering skills, accuracy, component handling, and ability to assemble working electronic circuits with rising difficulty.
+          </p>
+        </div>
+
+        <div class="destijl-grid">
+          <!-- Round 1 -->
+          <div class="col-span-12 md:col-span-4">
+            <div class="destijl-card bg-neutral-50 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="badge-chip bg-[#0000FF] text-white">Round 1</span>
+                  <span class="badge-chip bg-black text-white">10 Minutes</span>
+                </div>
+                <h3 class="text-2xl font-black mb-3">Basic Soldering Challenge</h3>
+                <p class="font-bold text-sm leading-relaxed mb-6">
+                  Participants solder 1&ndash;2 electronic components to create a simple circuit. Evaluation focuses strictly on basic soldering technique, joint cleanliness, and neat connections.
+                </p>
+              </div>
+              <div class="pt-4 border-t-2 border-black font-black text-xs uppercase tracking-wider text-neutral-700">
+                Focus: Clean solder joints & heat control
+              </div>
+            </div>
+          </div>
+
+          <!-- Round 2 -->
+          <div class="col-span-12 md:col-span-4">
+            <div class="destijl-card yellow-block flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="badge-chip bg-black text-white">Round 2</span>
+                  <span class="badge-chip bg-black text-white">15 Minutes</span>
+                </div>
+                <h3 class="text-2xl font-black mb-3">Perfboard Challenge</h3>
+                <p class="font-bold text-sm leading-relaxed mb-6 text-black">
+                  Participants solder multiple electronic components onto a standard perfboard. Evaluated on correct component placement, secure electrical connections, and neat board layout.
+                </p>
+              </div>
+              <div class="pt-4 border-t-2 border-black font-black text-xs uppercase tracking-wider text-black">
+                Focus: Multi-component perfboard routing
+              </div>
+            </div>
+          </div>
+
+          <!-- Round 3 -->
+          <div class="col-span-12 md:col-span-4">
+            <div class="destijl-card red-block text-white flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="badge-chip bg-white text-black">Round 3 (Final)</span>
+                  <span class="badge-chip bg-black text-white">20 Minutes</span>
+                </div>
+                <h3 class="text-2xl font-black mb-3 text-white">Final Circuit Challenge</h3>
+                <p class="font-bold text-sm leading-relaxed mb-6 text-white">
+                  Assemble and solder a complete, functional electronic circuit from given schematics. The circuit is powered and tested for functionality, accuracy, and overall craftsmanship.
+                </p>
+              </div>
+              <div class="pt-4 border-t-2 border-white font-black text-xs uppercase tracking-wider text-white">
+                Focus: Live circuit functionality & continuity
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation Criteria (100 Marks Breakdown) & Soldering Tips -->
+    <section class="py-16 md:py-24 bg-neutral-100 bx-b">
+      <div class="wrap">
+        <div class="destijl-grid">
+          <!-- Evaluation Criteria (100 Marks Table) -->
+          <div class="col-span-12 lg:col-span-6">
+            <span class="inline-block px-3 py-1 bg-black text-white font-black text-xs uppercase tracking-widest mb-3">
+              Marking Scheme
+            </span>
+            <h2 class="text-black mb-6">Evaluation Criteria (100 Marks)</h2>
+            <div class="destijl-card bg-white p-0 overflow-hidden">
+              <table class="w-full text-left border-collapse font-bold text-sm">
+                <thead>
+                  <tr class="black-block text-xs uppercase tracking-wider">
+                    <th class="p-4 border-b-2 border-black">Evaluation Criteria</th>
+                    <th class="p-4 border-b-2 border-black text-right">Marks</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-black">
+                  <tr>
+                    <td class="p-4 font-black">Circuit Functionality</td>
+                    <td class="p-4 text-right font-black text-base text-[#0000FF]">30 Marks</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4 font-black">Soldering Quality</td>
+                    <td class="p-4 text-right font-black text-base text-[#FF0000]">25 Marks</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4 font-black">Accuracy and Neatness</td>
+                    <td class="p-4 text-right font-black text-base">20 Marks</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4 font-black">Component Placement</td>
+                    <td class="p-4 text-right font-black text-base">15 Marks</td>
+                  </tr>
+                  <tr>
+                    <td class="p-4 font-black">Time Management</td>
+                    <td class="p-4 text-right font-black text-base">10 Marks</td>
+                  </tr>
+                  <tr class="yellow-block text-black font-black">
+                    <td class="p-4 text-base">TOTAL EVALUATION SCORE</td>
+                    <td class="p-4 text-right text-lg">100 MARKS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Soldering Pro Tips & Requirements -->
+          <div class="col-span-12 lg:col-span-6 mt-8 lg:mt-0 space-y-6">
+            <div>
+              <span class="inline-block px-3 py-1 bg-black text-white font-black text-xs uppercase tracking-widest mb-3">
+                Expert Guidelines
+              </span>
+              <h2 class="text-black mb-4">Official Soldering Tips</h2>
+              <div class="destijl-card yellow-block text-black">
+                <ul class="space-y-3 font-black text-sm list-disc pl-5">
+                  <li><strong>Appropriate Solder:</strong> Use an appropriate amount of solder and make clean, shiny, secure concave joints.</li>
+                  <li><strong>Heat Control:</strong> Avoid excessive heating of sensitive components (diodes, ICs, transistors).</li>
+                  <li><strong>Connection Spacing:</strong> Maintain proper spacing between connections to prevent accidental solder bridges.</li>
+                  <li><strong>Continuity Check:</strong> Check circuit continuity using a multimeter before final submission.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-black mb-3">Equipment & Hardware Provided</h3>
+              <div class="destijl-card bg-white">
+                <p class="font-bold text-sm text-neutral-800 leading-relaxed mb-3">
+                  All necessary tools and materials are supplied on individual workstations:
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs font-black">
+                  <span class="p-2 border-2 border-black bg-neutral-100">Soldering irons & stands</span>
+                  <span class="p-2 border-2 border-black bg-neutral-100">Solder wire</span>
+                  <span class="p-2 border-2 border-black bg-neutral-100">Perfboards</span>
+                  <span class="p-2 border-2 border-black bg-neutral-100">Electronic components</span>
+                  <span class="p-2 border-2 border-black bg-neutral-100">Connecting wires</span>
+                  <span class="p-2 border-2 border-black bg-neutral-100">Multimeters</span>
+                  <span class="p-2 border-2 border-black bg-neutral-100">Safety equipment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules & Regulations -->
+    <section class="py-16 md:py-24 bg-white bx-b">
+      <div class="wrap">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-10">
+            <span class="inline-block px-3 py-1 bg-black text-white font-black text-xs uppercase tracking-widest mb-2">
+              Compliance
+            </span>
+            <h2 class="text-3xl font-black">Rules & Safety Guidelines</h2>
+          </div>
+
+          <div class="destijl-card bg-neutral-50 p-6 md:p-8">
+            <ul class="space-y-4 font-bold text-base list-disc pl-5">
+              <li><strong>Individual participation:</strong> Every candidate operates an independent workbench.</li>
+              <li><strong>Time Limits:</strong> Participants must complete each round within the allotted time (10m, 15m, 20m).</li>
+              <li><strong>Materials:</strong> Components and soldering equipment will be provided at the venue. No external kits allowed.</li>
+              <li><strong>Assistance:</strong> No external assistance, cell phone usage, or cross-station communication is allowed.</li>
+              <li><strong>Safety First:</strong> Follow all lab safety instructions, use eye protection, and operate equipment only under volunteer supervision.</li>
+              <li><strong>Finality:</strong> The judges' decision will be final and binding.</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t-2 border-black flex flex-wrap items-center justify-between gap-4 text-xs font-black uppercase text-neutral-600">
+              <span>Coordinator: Ramneek</span>
+              <span>Capacity: 20&ndash;30 Participants</span>
+              <span>Entry Fee: ₹20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-16 md:py-24 bg-neutral-100 bx-b">
+      <div class="wrap">
+        <div class="max-w-xl mx-auto">
+          <div class="text-center mb-8">
+            <span class="inline-block px-3 py-1 bg-black text-white font-black text-xs uppercase tracking-widest mb-2">
+              Registration Form
+            </span>
+            <h2 class="text-3xl font-black">Register for Soldering Competition</h2>
+            <p class="text-sm font-bold text-neutral-600 mt-2">Entry Fee: ₹20 per participant &bull; 17 November at RGGEC Kangra</p>
+          </div>
+
+          <form onsubmit="handleEventRegister(event, 'Soldering Competition')" class="destijl-card bg-white space-y-4">
+            <div>
+              <label class="block font-black text-xs uppercase tracking-wider mb-1" for="name">Full Name *</label>
+              <input type="text" id="name" required class="destijl-input" placeholder="e.g. Ramneek Sharma">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-black text-xs uppercase tracking-wider mb-1" for="roll">Student ID / Roll No. *</label>
+                <input type="text" id="roll" required class="destijl-input" placeholder="e.g. 24ECE012">
+              </div>
+              <div>
+                <label class="block font-black text-xs uppercase tracking-wider mb-1" for="branch">Branch & Year *</label>
+                <input type="text" id="branch" required class="destijl-input" placeholder="e.g. ECE / EE · 2nd Year">
+              </div>
+            </div>
+            <div>
+              <label class="block font-black text-xs uppercase tracking-wider mb-1" for="email">College Email *</label>
+              <input type="email" id="email" required class="destijl-input" placeholder="name@rggec.ac.in">
+            </div>
+            <div>
+              <label class="block font-black text-xs uppercase tracking-wider mb-1">Official Entry Fee</label>
+              <input type="text" readonly class="destijl-input bg-yellow-100 font-black text-black" value="₹20 Entry Fee (Payable at Event Desk)">
+            </div>
+            <button type="submit" class="btn-destijl btn-black w-full text-base py-4 mt-2">
+              Confirm Soldering Registration (₹20) &rarr;
+            </button>
+            <p class="text-xs font-bold text-center text-neutral-500">
+              Station assignment will be handed over at the electronics lab desk.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross-Event Navigation -->
+    <section class="py-14 bg-white bx-b">
+      <div class="wrap">
+        <h3 class="text-xl font-black uppercase mb-6">Explore Other Competitions</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+          <a href="coding.html" class="destijl-card bg-neutral-50 hover:bg-red-50 text-black no-underline">
+            <span class="text-xs font-black text-[#FF0000] uppercase">Competition 01</span>
+            <h4 class="text-lg font-black mt-1">Challenge &ndash; Coding &rarr;</h4>
+            <p class="text-xs font-bold text-neutral-600 mt-2">3 Rounds &bull; Solo &bull; No AI</p>
+          </a>
+          <a href="typing-race.html" class="destijl-card bg-neutral-50 hover:bg-blue-50 text-black no-underline">
+            <span class="text-xs font-black text-[#0000FF] uppercase">Competition 02</span>
+            <h4 class="text-lg font-black mt-1">Typing Race &rarr;</h4>
+            <p class="text-xs font-bold text-neutral-600 mt-2">2 min &bull; MAT Lab &bull; WPM + Accuracy</p>
+          </a>
+          <a href="web-development.html" class="destijl-card bg-neutral-50 hover:bg-yellow-50 text-black no-underline">
+            <span class="text-xs font-black text-neutral-900 uppercase">Competition 03</span>
+            <h4 class="text-lg font-black mt-1">Web Development &rarr;</h4>
+            <p class="text-xs font-bold text-neutral-600 mt-2">Solo/Team &bull; AI Tools Allowed</p>
+          </a>
+          <a href="prompt-meme-battle.html" class="destijl-card bg-neutral-50 hover:bg-neutral-200 text-black no-underline">
+            <span class="text-xs font-black text-neutral-900 uppercase">Competition 04</span>
+            <h4 class="text-lg font-black mt-1">Prompt Meme Battle &rarr;</h4>
+            <p class="text-xs font-bold text-neutral-600 mt-2">Solo or Duo &bull; GenAI Comedy</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="black-block pt-12 pb-10">
+    <div class="wrap">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-neutral-800 text-xs font-bold text-neutral-400">
+        <div>
+          <a class="mondrian-logo text-white inline-flex mb-2" href="index.html">
+            <div class="logo-cube" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>Tech Fest</span>
+          </a>
+          <p>RGGEC Kangra &bull; 17 November</p>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="index.html" class="text-neutral-300 hover:text-yellow-400">Home</a>
+          <a href="coding.html" class="text-neutral-300 hover:text-yellow-400">Coding</a>
+          <a href="typing-race.html" class="text-neutral-300 hover:text-yellow-400">Typing</a>
+          <a href="web-development.html" class="text-neutral-300 hover:text-yellow-400">Web Dev</a>
+          <a href="prompt-meme-battle.html" class="text-neutral-300 hover:text-yellow-400">Meme Battle</a>
+          <a href="soldering-competition.html" class="text-yellow-400">05 Soldering</a>
+        </div>
+      </div>
+      <p class="text-center text-xs font-bold text-neutral-500 mt-6">
+        &copy; 2026 Tech Fest, RGGEC Kangra. All rights reserved. De Stijl Abstrato Neoplasticism Architecture.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => mobileDrawer.classList.toggle('is-open'));
+    }
+    function handleEventRegister(e, eventName) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      const origText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending&hellip;';
+
+      const SHEET_URL = 'https://script.google.com/macros/s/AKfycbxOBs5YiW6Pwgv_cFhX9Z0jSrh1MybT4b3Y2HvQbxv4cfRYRDPoWVTHdm_uDFxKJMnDRg/exec';
+      const payload = {
+        name:    (document.getElementById('name')   || {}).value || '',
+        email:   (document.getElementById('email')  || {}).value || '',
+        phone:   '',
+        event:   eventName + ' (₹20 Entry)',
+        team:    'Individual',
+        college: ((document.getElementById('roll')   || {}).value || '')
+                 + ' · ' + ((document.getElementById('branch') || {}).value || '')
+      };
+
+      fetch(SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(() => {
+        btn.innerHTML = '✔ Registered! Pay ₹20 at Desk';
+        btn.style.background = '#008000';
+        setTimeout(() => {
+          e.target.reset();
+          btn.disabled = false;
+          btn.innerHTML = origText;
+          btn.style.background = '';
+        }, 3500);
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+        alert('Network error – please check your connection and try again.');
+      });
+    }
+  </script>
+</body>
+</html>
+
